@@ -143,6 +143,12 @@ int main() {
         d[i]=new int[alphabet.size()];
     }
     delta(d,pattern,alphabet);
+//    for (int j = 0; j < pattern.size()+1; ++j) {
+//        for (int i = 0; i < alphabet.size(); ++i) {
+//            cout<<d[j][i]<<" ";
+//        }
+//        cout<<endl;
+//    }
     FAM(input,d,pattern.size(),alphabet);
     for (int i = 0; i <pattern.size() ; ++i) {
         delete [] d [i];
